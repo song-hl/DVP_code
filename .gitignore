@@ -1,46 +1,39 @@
+# Omniverse
+**/*.dmp
+**/.thumbs
+
 # Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-.venv/
-venv/
-env/
-build/
-dist/
-*.egg-info/
-
-# Tooling
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# Notebooks
-.ipynb_checkpoints/
-
-# Logs and experiment outputs
-logs/
-runs/
-outputs/
-wandb/
-tensorboard/
-checkpoints/
-*.ckpt
-*.pth
-*.pt
-
-# System/editor files
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-*.swo
+**/*.egg-info/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+**/*.pb
 
-# Large local assets
-data/
-datasets/
-assets/local/
+# IDE
+**/.idea/
+**/.vscode/
+# Don't ignore the top-level .vscode directory as it is
+# used to configure VS Code settings
+!.vscode
+
+# Outputs
+**/runs/*
+**/logs/*
+**/recordings/*
+**/output/*
+**/outputs/*
+**/videos/*
+**/wandb/*
+**/.neptune/*
+docker/artifacts/
+*.tmp
+
+# Isaac-Sim packman
+_isaac_sim*
+_repo
+_build
+.lastformat
+
+# LSP
+pyrightconfig.json
